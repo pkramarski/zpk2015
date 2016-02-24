@@ -8,7 +8,7 @@ int wynik=1;
 
 cin >> n;
 
-while(wynik<n)
+while(wynik<=n)
 {
     cout<<wynik<<endl;
     wynik=wynik*2;
