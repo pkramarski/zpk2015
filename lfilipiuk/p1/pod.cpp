@@ -1,3 +1,5 @@
+//problem z czasem wykonywania
+
 #include <iostream>
 using namespace std;
 
