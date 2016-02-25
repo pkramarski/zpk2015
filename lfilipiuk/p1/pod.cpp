@@ -6,13 +6,14 @@ using namespace std;
 int main()
 {
 int a, b, k;
-int licznik=0;
 
 cin >> a >> b >> k;
 
-for(int i=a;i<=b;i++)
-    if(i%k==0)
-        licznik++;
+while(a%k!=0)
+    a++;
 
-cout<<licznik<<endl;
+while(b%k!=0)
+    b--;
+
+cout<<(b-a)/k+1<<endl;
 }
