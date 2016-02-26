@@ -1,5 +1,3 @@
-//problem z czasem wykonywania
-
 #include <iostream>
 using namespace std;
 
@@ -9,11 +7,8 @@ int a, b, k;
 
 cin >> a >> b >> k;
 
-while(a%k!=0)
-    a++;
+int x = (a+k-1)/k;
+int y = b/k;
 
-while(b%k!=0)
-    b--;
-
-cout<<(b-a)/k+1<<endl;
+cout<<y-x+1;
 }
