@@ -8,9 +8,6 @@ int main() {
 	// wczytywanie
 	cin >> telefon >> rokUrodzenia;
 
-	// obliczenia
-	int wynik = (((telefon % 10) * 2 + 5) * 50) + 1764 - rokUrodzenia;
-
 	// wynik
-	cout << wynik << endl;
+	cout << (((telefon % 10) * 2 + 5) * 50) + 1764 - rokUrodzenia << endl;
 }
