@@ -39,7 +39,7 @@ int main() {
 	int ag = rok % 19;
 	int bg = rok % 4;
 	int cg = rok % 7;
-	int	dg = ((ag * 19) + A) % 30;
+	int dg = ((ag * 19) + A) % 30;
 	int eg = (2 * bg + 4 * cg + 6 * dg + B) % 7;
 
 	if (dg + eg < 10) {
