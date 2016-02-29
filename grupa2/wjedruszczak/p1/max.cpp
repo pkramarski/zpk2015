@@ -8,7 +8,7 @@ int main() {
 	// wczytywanie
 	cin >> a >> b;
 
-	// wieksza z liczb naturalnych
+	// wieksza z liczb
 	if (a > b)
 		cout << a << endl;
 	else
