@@ -14,7 +14,7 @@ int main() {
 
 	// lustro
 	if (n / 10 == 0)
-		cout << n << endl;
+		cout << n;
 	else
 		while (n != 0) {
 			cout << n % 10;
