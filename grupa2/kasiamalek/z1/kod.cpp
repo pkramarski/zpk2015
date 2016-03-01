@@ -2,7 +2,6 @@
 using namespace std;
 int main()
 {
-int a;
 char b,c;
 cin>>b>>c;
 if(c>='A'&&c<='F')
