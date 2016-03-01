@@ -1,0 +1,22 @@
+#include <cstdio>
+using namespace std;
+
+int main () {
+
+int a, b, k, min, count = 0;
+scanf("%d %d %d", &a, &b, &k);
+
+if (a % k == 0)
+{
+min = a;
+}
+else
+{
+min = ((a / k) + 1) * k;
+}
+
+for (int i = min; i <= b; i += k)
+{
+count++;
+}
+printf("%d\n", count); }
