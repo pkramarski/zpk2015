@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int a, b, k, licznik;
+    cin >> a >> b >> k; 
+    licznik = 0;
+    while(a<=b)
+    {
+        if(a%k==0)
+        {
+            licznik = licznik + 1;
+        }
+        a = a+1;
+    }
+    cout << licznik << endl;
+
+    return 0;
+}
