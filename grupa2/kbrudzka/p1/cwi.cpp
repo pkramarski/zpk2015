@@ -5,7 +5,7 @@ int main() {
     int x, y;
     cin >> x >> y;
     
-    /* zgodnie z poleceniem powinien być uwzgledniony jeszcze warunek dla wczytywanych liczb
+    /* zgodnie z poleceniem powinien być jeszcze uwzgledniony warunek dla wczytywanych liczb
     if ((x >= -1000000) && (x<=1000000) && (y>= -1000000) && (y<=1000000)) { */
     
     if (x>0 && y>0)
