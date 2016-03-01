@@ -3,17 +3,12 @@ using namespace std;
 
 int main() 
 {
-    int a, b, k, licznik,pom;
-    cin >> a >> b >> k; 
-    licznik = 0;
-    pom=k;
-    while(pom<=b)
-    {
-        if(pom>=a)
-        licznik++;
-        pom=pom+k;
+    int a, b, k, z, licznik = 0;
+    cin >> a >> b >> k ;
+    for(z = a; z >= a && z <= b; z++){
+        if(z % k == 0){
+            licznik++;}
     }
     cout << licznik << endl;
-
     return 0;
 }
