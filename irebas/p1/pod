@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a, b, k, i, licz;
+	licz = 0;
+	cin >> a >> b >> k;
+	for(i = a; i <= b; i++) {
+		if (i%k == 0) {
+			licz++;
+		}
+		/* cout << i%k << endl;
+		licz++; */
+	}
+cout << licz << endl;
+	
+}
