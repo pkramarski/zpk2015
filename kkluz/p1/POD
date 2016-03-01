@@ -3,16 +3,15 @@ using namespace std;
 
 int main() 
 {
-    int a, b, k, licznik;
+    int a, b, k, licznik,pom;
     cin >> a >> b >> k; 
     licznik = 0;
-    while(a<=b)
+    pom=k;
+    while(pom<=b)
     {
         if(a%k==0)
-        {
-            licznik = licznik + 1;
-        }
-        a = a+1;
+        licznik++;
+        pom=pom+k;
     }
     cout << licznik << endl;
 
