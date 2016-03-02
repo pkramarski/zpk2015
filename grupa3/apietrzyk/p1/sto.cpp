@@ -6,28 +6,36 @@ int main () {
     int A, B, K;
     cin >> A >> B >> K;
 
-    int l;
-    int m;
+    int w, m;
     if (A>B) {
+        w=A;
+        m=B;
+    }
+    else {
+        w=B;
+        m=A;
+    }
+
+    int l;
+    int n;
+
+    if (m<K)
+        cout << 0 << endl;
+
+    if (m<2*K && m>=K) {
+        l = w/K;
+        cout << l << endl;
+    }
+
+    if (m>=2*K) {
 
         l=A/K;
         l=2*l;
         B=B-2*K;
-        m=B/K;
-        m=2*m;
+        n=B/K;
+        n=2*n;
 
-    cout << m+l <<endl;
+    cout << n+l <<endl;
     }
 
-    if (B>=A) {
-
-        l=B/K;
-        l=2*l;
-        A=A-2*K;
-        m=A/K;
-        m=2*m;
-
-    cout << m+l <<endl;
-    }
-return 0;
 }

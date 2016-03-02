@@ -3,12 +3,13 @@
 using namespace std;
 
 int main () {
-    int a,b,k,i,j;
+    int a,b,k,j;
     j=0;
     cin >> a >> b >>k;
-    for (i=a; i<b+1; i++) {
-        if(i%k==0)
+    while (a<=b) {
+        if(a%k==0)
             j++;
+        a++;
     }
     cout << j;
 }

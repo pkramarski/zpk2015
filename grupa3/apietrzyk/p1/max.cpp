@@ -6,12 +6,6 @@ int main() {
     cin >> a >> b;
     if ( a > b)
         cout << a ;
-    if ( b > a)
-        cout << b;
     else
-        cout << "rowne";
-
-return 0;
+        cout << b;
 }
-
-
