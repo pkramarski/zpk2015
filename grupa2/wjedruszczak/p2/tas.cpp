@@ -20,7 +20,7 @@ int main() {
 	for (i = 0; i < n; ++i) {
 		if (ciagLiczb[i] != ciagLiczb[n - 1]) {
 			rozneZero = n - 1 - i;
-			break;
+			break; // szukam najwiekszej odleglosci
 		}
 	}
 
@@ -28,7 +28,7 @@ int main() {
 	for (i = n - 1; i > 0; --i) {
 		if (ciagLiczb[i] != ciagLiczb[0]) {
 			rozneN = i;
-			break;
+			break; // szukam najwiekszej odleglosci
 		}
 	}
 
