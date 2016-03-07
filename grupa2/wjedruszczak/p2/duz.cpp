@@ -37,11 +37,11 @@ bool sprawdzCzyWieksza(string liczba1, string liczba2, string znakPorownania) {
 		if (rowne == liczba1.size() && znakPorownania == ">=")
 			return true;
 		else if (rowne == liczba1.size() && znakPorownania == "<=")
-			return false;
+			return false; // wywolanie z "!" zamienia na true
 		else if (rowne == liczba1.size() && znakPorownania == ">")
 			return false;
 		else if (rowne == liczba1.size() && znakPorownania == "<")
-			return true;
+			return true; // wywolanie z "!" zamienia na false
 	}
 }
 
