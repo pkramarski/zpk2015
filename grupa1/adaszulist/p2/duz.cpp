@@ -3,7 +3,7 @@ using namespace std;
 
 bool porownaj(int a, int b, string c){
     bool wynik = false;
-    if(c == "=="){
+    if(c == "="){
         if(a == b)
          wynik = true;
     }
