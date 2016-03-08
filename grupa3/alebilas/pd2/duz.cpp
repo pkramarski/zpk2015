@@ -30,14 +30,14 @@ bool czy_rozne(string x, string y){
 bool czy_mniejsze(string x, string y){
     if(x.length()<y.length())
         return true;
-    if(x.length()>y.length())
+    else if(x.length()>y.length())
         return false;
     else{
         int len = x.length();
         for(int i=0; i<len; i++)
             if(x[i]<y[i])
                 return true;
-            else if(x[i]>y[i])
+            else (x[i]>y[i])
                 return false;
     }
 }
@@ -45,14 +45,14 @@ bool czy_mniejsze(string x, string y){
 bool czy_wieksze(string x, string y){
     if(x.length()>y.length())
         return true;
-    if(x.length()<y.length())
+    else if(x.length()<y.length())
         return false;
     else{
         int len = x.length();
         for(int i=0; i<len; i++)
             if(x[i]>y[i])
                 return true;
-            else if(x[i]<y[i])
+            else (x[i]<y[i])
                 return false;
     }
 }
@@ -91,7 +91,7 @@ if (znak == "<=")
 if (znak == ">=")
         wynik = czy_wieksze_rowne(x, y);
 if(wynik)
-    cout << "Tak" << endl;
+    cout << "TAK" << endl;
 else
-    cout << "Nie" << endl;
+    cout << "NIE" << endl;
 }
